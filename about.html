@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>About Us | FitnessPoint</title>
+
+  <style>
+    /* HEADER */
+    .about-header {
+      background: url("assets/facility.jpg") center/cover no-repeat;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .about-header h1 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.5);
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    /* ABOUT */
+    .about-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      text-align: center;
+      padding: 20px;
+    }
+    .about-section p {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* WHY CHOOSE US */
+    .why-container {
+      max-width: 1100px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .why-card {
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .why-card:hover {
+      transform: translateY(-6px);
+    }
+    .why-card i {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #ff5722;
+    }
+
+    /* GALLERY */
+    .gallery-container {
+      max-width: 1100px;
+      margin: 60px auto;
+      text-align: center;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="about-header">
+    <h1>About FitnessPoint</h1>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <h2 class="section__header"> Who We Are</h2>
+    <p>FitnessPoint is dedicated to helping people achieve a healthier lifestyle through personalized workout programs, expert trainers, and world-class equipment.</p>
+    <p>We aim to inspire and transform lives with fitness routines that are fun, effective, and long-lasting.</p>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-container">
+    <h2 class="section__header">Why Choose Us?</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <i class="ri-star-line"></i>
+        <h4>Modern Equipment</h4>
+        <p>Experience premium machines and workout tools.</p>
+      </div>
+      <div class="why-card">
+        <i class="ri-user-star-line"></i>
+        <h4>Expert Trainers</h4>
+        <p>Get guidance from certified fitness professionals.</p>
+      </div>
+      <div class="why-card">
+        <i class="ri-heart-pulse-line"></i>
+        <h4>Personalized Programs</h4>
+        <p>Workouts tailored for your body and goals.</p>
+      </div>
+      <div class="why-card">
+        <i class="ri-group-line"></i>
+        <h4>Community Support</h4>
+        <p>Join a supportive and motivational fitness family.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GALLERY -->
+  <section class="gallery-container">
+    <h2 class="section__header">Gallery</h2>
+    <div class="gallery-grid">
+      <img src="assets/gallery1.jpg" alt="gym image">
+      <img src="assets/gallery2.jpg" alt="gym image">
+      <img src="assets/gallery3.jpg" alt="gym image">
+      <img src="assets/gallery4.jpg" alt="gym image">
+      <img src="assets/gallery5.jpg" alt="gym image">
+      <img src="assets/gallery6.jpg" alt="gym image">
+      <img src="assets/gallery.7.jpg" alt="gym image">
+      <img src="assets/gallary.8.jpg" alt="gym image">   
+      <img src="assets/gallary.9.jpg" alt="gym image"> 
+      <img src="assets/gallary.10.jpg" alt="gym image"> 
+ 
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <a href="#" class="footer__logo">
+          <img src="assets/logo-white.png" alt="logo" />
+        </a>
+        <ul class="footer__links">
+          <li><a href="#"><i class="ri-phone-line"></i> +91 0987654321</a></li>
+          <li><a href="#"><i class="ri-map-pin-line"></i> New Delhi India</a></li>
+          <li><a href="#"><i class="ri-mail-line"></i> info@fitnesspoint</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Gym Hours</h4>
+        <ul class="footer__links">
+          <li>Mon–Sat: 5am - 10pm</li>
+          <li>Sunday: 5am - 1pm</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bar">© 2024 FitnessPoint</div>
+  </section>
+
+  <!-- ANIMATIONS -->
+  <script>
+    ScrollReveal().reveal('.about-section', { distance: '50px', duration: 800, origin: 'bottom' });
+    ScrollReveal().reveal('.why-card', { interval: 150, distance: '40px', duration: 800, origin: 'bottom' });
+    ScrollReveal().reveal('.gallery-grid img', { interval: 100, distance: '20px', duration: 700, origin: 'bottom' });
+  </script>
+
+</body>
+</html>

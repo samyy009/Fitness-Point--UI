@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | FitnessPoint</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">
+              <img src="assets/logo-white.png" alt="logo" class="logo-white" />
+              <img src="assets/logo-dark.png" alt="logo" class="logo-dark" />
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+<li><a href="#classes">Classes</a></li>
+          <li><a href="#contact">Blog</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="#">Join Now</a></li>
+        </ul>
+        <div class="nav__btns">
+          <button class="btn">Join Now</button>
+        </div>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__content">
+          <h1>DON'T STOP TILL YOUR SUCCESS!</h1>
+          <h2>GET FIT TO HAPPY</h2>
+          <p>
+            Unlock your full potential with our expert training and
+            state-of-the-art facilities. Every step you take brings you closer
+            to a healthier, happier you. Let's make fitness a lifestyle!
+          </p>
+          <div class="header__btn">
+           <button class="btn" onclick="window.location.href='about.html';">
+  Explore More
+</button> 
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+      </div>
+    </header>
+
+    <div class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+          <img src="assets/about.png" alt="about" />
+        </div>
+        <div class="about__content">
+          <h2 class="section__header">Ready To Make A Change?</h2>
+          <p>
+            Taking the first step towards a healthier, stronger you can be the
+            most challenging part of the journey, but it's also the most
+            rewarding. Whether you're a beginner or a seasoned athlete, our
+            personalized training programs are designed to help you reach your
+            goals faster and more efficiently.
+          </p>
+          <p>
+            With our motivating trainers, energizing classes, and
+            state-of-the-art equipment, you'll have everything you need to stay
+            committed and see real results.
+          </p>
+          <div class="about__btn">
+<button class="btn-get-started" onclick="window.location.href='get-started.html';">
+  Get Started
+</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <h2 class="section__header">Services We Provide</h2>
+        <div class="service__grid">
+          <div class="service__card">
+            <span>01</span>
+            <h4>Workout Planning</h4>
+            <p>
+            Personalized exercise routines tailored to your fitness level
+            Track progress with detailed workout analytics
+            Access guided video demonstrations for each exercise
+            Adjust intensity and duration based on your goals
+            </p>
+          </div>
+          <div class="service__card">
+            <span>02</span>
+            <h4>Daily Logs</h4>
+            <p>
+              Track daily workouts, sleep hours, and water intake
+              Monitor mood and energy levels throughout the day
+              Visual charts and graphs for weekly summaries
+              Set daily goals and receive progress notifications
+            </p>
+          </div>
+          <div class="service__card">
+            <span>03</span>
+            <h4>Meal Suggestions</h4>
+            <p>
+            Personalized meal plans based on your fitness goals
+            Nutritional breakdown for each meal
+            Recipe suggestions with preparation time
+            Track calories and macronutrients daily
+            Filter meals by diet preference (vegan, keto, etc.)
+            </p>
+          </div>
+          <div class="service__card">
+            <span>04</span>
+            <h4> Habit Tracker</h4>
+            <p>
+            Build and maintain good habits with daily reminders
+            Track your habit streaks and consistency
+            Visual progress indicators for motivation
+            Customize reminder times and frequency
+            Celebrate milestones and achievements
+            </p>
+          </div>
+          <div class="service__card">
+            <span>05</span>
+            <h4>Progress Reports</h4>
+            <p>
+            Weekly and monthly progress summaries
+            Visual charts for weight, measurements, and fitness levels
+            Goal tracking and milestone celebrations
+            Personalized feedback and recommendations
+            Shareable reports for social motivation
+            </p>
+        </div>
+      </div>
+    </section>
+<section class="classes-section" id="classes">
+    <h2 class="section-title">Explore Categories</h2>
+
+    <div class="classes-grid">
+
+        <!-- Workout Categories -->
+        <div class="feature-card" onclick="toggleDropdown(this)">
+
+    <img src="assets/icons/workout.png" class="feature-icon">
+
+    <div class="text">
+        <h3>Workout Categories</h3>
+    </div>
+    <span class="arrow">➜</span>
+    <!-- DROPDOWN CONTENT -->
+    <div class="dropdown">
+        <ul>
+            <li>Strength Training</li>
+            <li>Cardio Workouts</li>
+            <li>HIIT Sessions</li>
+            <li>Yoga & Flexibility</li>
+        </ul>
+    </div>
+</div>
+      <!-- Exercise Library -->
+<div class="feature-card" onclick="toggleDropdown(this)">
+    <img src="assets/icons/exercise.png" class="feature-icon">
+    <div class="feature-text">
+        <h3>Exercise Library</h3>
+      
+    </div>
+    <span class="arrow">➜</span>
+
+    <div class="dropdown">
+        <ul>
+            <li>Upper Body Exercises</li>
+            <li>Lower Body Exercises</li>
+            <li>Full Body Workouts</li>
+            <li>Video Tutorials</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Schedule Builder -->
+<div class="feature-card" onclick="toggleDropdown(this)">
+    <img src="assets/icons/schedule.png" class="feature-icon">
+    <div class="feature-text">
+        <h3>Schedule Builder</h3>
+        
+    </div>
+    <span class="arrow">➜</span>
+
+    <div class="dropdown">
+        <ul>
+            <li>Create Weekly Plan</li>
+            <li>Add Rest Days</li>
+            <li>Auto-generated schedules</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Track Daily Activity -->
+<div class="feature-card" onclick="toggleDropdown(this)">
+    <img src="assets/icons/activity.png" class="feature-icon">
+    <div class="feature-text">
+        <h3>Track Daily Activity</h3>
+       
+    </div>
+    <span class="arrow">➜</span>
+
+    <div class="dropdown">
+        <ul>
+            <li>Daily Logs</li>
+            <li>Workout Streaks</li>
+            <li>Calories Burned</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Mood -->
+<div class="feature-card" onclick="toggleDropdown(this)">
+    <img src="assets/icons/mood.png" class="feature-icon">
+    <div class="feature-text">
+        <h3>Mood</h3>
+        
+    </div>
+    <span class="arrow">➜</span>
+
+    <div class="dropdown">
+        <ul>
+            <li>Track Mood</li>
+            <li>Energy Level Input</li>
+            <li>Mood Charts</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Fitness Inputs -->
+<div class="feature-card" onclick="toggleDropdown(this)">
+    <img src="assets/icons/fitness.png" class="feature-icon">
+    <div class="feature-text">
+        <h3>Fitness Inputs</h3>
+       
+    </div>
+    <span class="arrow">➜</span>
+
+    <div class="dropdown">
+        <ul>
+            <li>Track Sleep</li>
+            <li>Track Water</li>
+            <li>Daily Goals</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Meal Plans -->
+<div class="feature-card" onclick="toggleDropdown(this)">
+    <img src="assets/icons/meal.png" class="feature-icon">
+    <div class="feature-text">
+        <h3>Meal Plans</h3>
+       
+    </div>
+    <span class="arrow">➜</span>
+
+    <div class="dropdown">
+        <ul>
+            <li>Calorie-Based Plans</li>
+            <li>Vegetarian / Vegan</li>
+            <li>High-Protein Meals</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Recipe Suggestions -->
+<div class="feature-card" onclick="toggleDropdown(this)">
+    <img src="assets/icons/recipe.png" class="feature-icon">
+    <div class="feature-text">
+        <h3>Recipe Suggestions</h3>
+        
+    </div>
+    <span class="arrow">➜</span>
+
+    <div class="dropdown">
+        <ul>
+            <li>Ingredient-Based Recipes</li>
+            <li>Healthy Options</li>
+            <li>Quick Meals</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Macros -->
+<div class="feature-card" onclick="toggleDropdown(this)">
+    <img src="assets/icons/macro.png" class="feature-icon">
+    <div class="feature-text">
+        <h3>Macronutrient Breakdown</h3>
+       
+    </div>
+    <span class="arrow">➜</span>
+
+    <div class="dropdown">
+        <ul>
+            <li>Carb Breakdown</li>
+            <li>Protein Intake</li>
+            <li>Fat Ratios</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Custom Habits -->
+<div class="feature-card" onclick="toggleDropdown(this)">
+    <img src="assets/icons/habits.png" class="feature-icon">
+    <div class="feature-text">
+        <h3>Custom Habits</h3>
+       
+    </div>
+    <span class="arrow">➜</span>
+
+    <div class="dropdown">
+        <ul>
+            <li>Create Habit</li>
+            <li>Daily Reminders</li>
+            <li>Habit Tracking</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Progress Visuals -->
+<div class="feature-card" onclick="toggleDropdown(this)">
+    <img src="assets/icons/progress.png" class="feature-icon">
+    <div class="feature-text">
+        <h3>Progress Visuals</h3>
+        
+    </div>
+    <span class="arrow">➜</span>
+
+    <div class="dropdown">
+        <ul>
+            <li>Progress Charts</li>
+            <li>Weekly Reports</li>
+            <li>Body Metrics</li>
+        </ul>
+    </div>
+</div>
+    </div>
+</section>
+
+    <section class="facility__container">
+      <div class="facility__image">
+        <img src="assets/facility.jpg" alt="facility" />
+      </div>
+      <div class="facility__content">
+        <h2 class="section__header">It's About Who You Can Become</h2>
+        <p>
+          At our gym, we believe that fitness is more than just physical—it's
+          about transforming your mindset, pushing your limits, and realizing
+          your full potential. Every workout is a step toward becoming the
+          strongest, healthiest, and most confident version of yourself.
+        </p>
+        <p>
+          It's not about quick fixes or temporary results; it's about adopting a
+          lifestyle that fuels your passion for self-improvement. With the right
+          mindset and the right support, you can overcome obstacles, break
+          barriers, and achieve goals you never thought possible.
+        </p>
+        <p>
+          Who you become is entirely up to you, but we believe in your
+          potential. With the right training, dedication, and focus, you can
+          turn your goals into reality.
+        </p>
+      </div>
+    </section>
+
+    <section class="section__container mentor__container">
+      <h2 class="section__header">Having Your Own Coach And Mentor</h2>
+      <div class="mentor__grid">
+        <div class="mentor__card">
+          <img src="assets/mentor-1.jpg" alt="mentor" />
+          <h4>DAVID WILLIAMS</h4>
+          <p>Body Builder Coach</p>
+        </div>
+        <div class="mentor__card">
+          <img src="assets/mentor-2.jpg" alt="mentor" />
+          <h4>ROSY RIVERA</h4>
+          <p>Cardio Coach</p>
+        </div>
+        <div class="mentor__card">
+          <img src="assets/mentor-3.jpg" alt="mentor" />
+          <h4>MATT STONIE</h4>
+          <p>Fitness Coach</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner" id="contact">
+      <div class="banner__content">
+        <h2>THE BEST TRAINERS OUT THERE</h2>
+        <p>ARE YOU A TRAINER? <a href="#">JOIN US</a></p>
+      </div>
+      <div class="banner__image">
+        <img src="assets/banner.png" alt="banner" />
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="#" class="footer__logo">
+            <img src="assets/logo-white.png" alt="logo" />
+          </a>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-line"></i></span> +91 0987654321
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-line"></i></span> New Delhi India
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-mail-line"></i></span> info@fitnesspoint
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Membership</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Gym Hours</h4>
+          <ul class="footer__links">
+            <li>Monday 5am - 10pm</li>
+            <li>Tuseday 5am - 10pm</li>
+            <li>Wednesday 5am - 10pm</li>
+            <li>Thursday 5am - 10pm</li>
+            <li>Friday 5am - 10pm</li>
+            <li>Saturday 5am - 10pm</li>
+            <li>Sunday 5am - 1pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+<script>
+function toggleDropdown(card) {
+    card.classList.toggle("open");
+}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const cards = document.querySelectorAll(".feature-card");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                // Stagger effect: each card shows with slight delay
+                setTimeout(() => {
+                    entry.target.classList.add("show");
+                }, index * 150); // 150ms delay per card
+
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
+});
+</script>
+
+  </body>
+</html>
+

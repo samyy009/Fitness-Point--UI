@@ -1,0 +1,37 @@
+.feature-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.25s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 22px rgba(0,0,0,0.12);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+}
+
+.feature-text h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.feature-text p {
+    margin: 3px 0 0;
+    color: #6e6e6e;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 24px;
+    color: #2ec3c3;
+}

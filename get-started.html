@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Your Fitness Plan</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: url('assets/background.png')
+            no-repeat center center/cover;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.55);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 5;
+        width: 90%;
+        max-width: 450px;
+        background: rgba(255,255,255,0.15);
+        padding: 30px;
+        border-radius: 18px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+        color: #fff;
+        text-align: center;
+    }
+
+    .header-img {
+        width: 140px;
+        margin-bottom: 15px;
+        filter: drop-shadow(0px 5px 12px rgba(0,0,0,0.4));
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    select {
+        width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        border-radius: 10px;
+        border: none;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 25px;
+        background: #ff6f3c;
+        border: none;
+        padding: 14px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    button:hover {
+        background: #ff875c;
+    }
+</style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+    <img src="assets/fitness.png" alt="Fitness Logo" class="header-img">
+
+    <h1>Create Your Fitness Plan</h1>
+
+    <label>Goal</label>
+    <select id="goal">
+        <option value="">Select Goal</option>
+        <option>Lose Weight</option>
+        <option>Gain Muscle</option>
+        <option>Stay Fit</option>
+        <option>Build Strength</option>
+    </select>
+
+    <label>Workout Type</label>
+    <select id="workout_type">
+        <option value="">Select Workout Type</option>
+        <option>Home Workouts</option>
+        <option>Gym Training</option>
+    </select>
+
+    <label>Experience Level</label>
+    <select id="level">
+        <option value="">Select Level</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+    </select>
+
+    <button onclick="saveAndContinue()">Continue</button>
+
+</div>
+
+<script>
+function saveAndContinue() {
+    localStorage.setItem("goal", document.getElementById("goal").value);
+    localStorage.setItem("workout_type", document.getElementById("workout_type").value);
+    localStorage.setItem("level", document.getElementById("level").value);
+
+    window.location.href = "plan.html";
+}
+</script>
+
+</body>
+</html>
