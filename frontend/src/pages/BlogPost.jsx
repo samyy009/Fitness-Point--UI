@@ -36,10 +36,11 @@ export default function BlogPost() {
     <div style={{ marginTop: '80px', minHeight: '100vh', background: 'var(--dark)' }}>
       {/* Blog Header / Cover Image */}
       <div 
+        className="blogpost-hero"
         style={{ 
           position: 'relative', 
           height: '50vh', 
-          background: `linear-gradient(rgba(2, 6, 23, 0.4), rgba(2, 6, 23, 0.9)), url(${post.imageUrl || '/assets/facility.jpg'}) center/cover no-repeat`,
+          background: `var(--blog-overlay), url(${post.imageUrl || '/assets/facility.jpg'}) center/cover no-repeat`,
           display: 'flex',
           alignItems: 'flex-end',
           paddingBottom: '3rem'

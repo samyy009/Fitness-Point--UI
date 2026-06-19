@@ -89,8 +89,7 @@ export default function Trainers() {
   return (
     <div style={{ marginTop: '70px', minHeight: '100vh', background: 'var(--dark)' }}>
       {/* ── Hero Banner ─────────────────────────────────────────────── */}
-      <div style={{
-        background: 'linear-gradient(rgba(2,3,9,0.8), rgba(2,3,9,0.95)), url("/assets/background.png") center/cover no-repeat',
+      <div className="trainers-hero" style={{
         padding: '5rem 0', textAlign: 'center', borderBottom: '1px solid rgba(0,229,255,0.08)',
         position: 'relative', overflow: 'hidden'
       }}>

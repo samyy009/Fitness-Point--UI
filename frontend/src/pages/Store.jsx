@@ -223,8 +223,7 @@ export default function Store() {
     <div style={{ background: 'var(--dark)', minHeight: '100vh' }}>
 
       {/* ── Hero Banner ─────────────────────────────────────────────── */}
-      <div style={{
-        background: 'linear-gradient(135deg, #020309 0%, #0d1a2d 60%, #080f1a 100%)',
+      <div className="store-hero" style={{
         borderBottom: '1px solid rgba(0,229,255,0.08)',
         padding: '8rem 0 4rem',
         position: 'relative',

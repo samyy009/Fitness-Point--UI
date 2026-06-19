@@ -27,6 +27,7 @@
   --grad-3: linear-gradient(135deg, #ff6b6b 0%, #a855f7 100%);
   --grad-dark: linear-gradient(180deg, #020309 0%, #080f1a 100%);
   --grad-hero: linear-gradient(135deg, #020309 0%, #080f1a 40%, #0d1a2d 100%);
+  --blog-overlay: linear-gradient(rgba(2, 6, 23, 0.4), rgba(2, 6, 23, 0.9));
   --shadow: 0 4px 24px rgba(0,0,0,0.4);
   --shadow-lg: 0 8px 48px rgba(0,0,0,0.5);
   --shadow-glow: 0 0 40px rgba(0,229,255,0.2);
@@ -1131,6 +1132,7 @@ body.light-theme {
   --white: #1a202c;
   --grad-hero: linear-gradient(135deg, #f0f4f8 0%, #e1e7f0 100%);
   --grad-dark: linear-gradient(180deg, #f0f4f8 0%, #e1e7f0 100%);
+  --blog-overlay: linear-gradient(rgba(240, 244, 248, 0.65), rgba(240, 244, 248, 0.95));
 }
 body.light-theme .navbar.scrolled {
   background: rgba(240, 244, 248, 0.9);
@@ -1218,5 +1220,48 @@ body.light-theme .navbar.scrolled .nav-mobile-btn {
   color: #1a202c !important;
   border-color: rgba(0, 0, 0, 0.1) !important;
 }
+
+/* ── Theme-Aware Page Hero Backgrounds ─────────────────────────────────────── */
+.home-hero {
+  background-image: linear-gradient(rgba(2,3,9,0.7), rgba(2,3,9,0.85)), url('/assets/background.png');
+}
+body.light-theme .home-hero {
+  background-image: linear-gradient(rgba(240,244,248,0.85), rgba(240,244,248,0.95)), url('/assets/background.png');
+}
+
+.about-hero {
+  background: linear-gradient(rgba(2,3,9,0.7), rgba(2,3,9,0.92)), url("/assets/facility.jpg") center/cover no-repeat;
+}
+body.light-theme .about-hero {
+  background: linear-gradient(rgba(240,244,248,0.85), rgba(240,244,248,0.95)), url("/assets/facility.jpg") center/cover no-repeat;
+}
+
+.classes-hero {
+  background: linear-gradient(rgba(2,3,9,0.8), rgba(2,3,9,0.95)), url("/assets/facility.jpg") center/cover no-repeat;
+}
+body.light-theme .classes-hero {
+  background: linear-gradient(rgba(240,244,248,0.85), rgba(240,244,248,0.95)), url("/assets/facility.jpg") center/cover no-repeat;
+}
+
+.trainers-hero {
+  background: linear-gradient(rgba(2,3,9,0.8), rgba(2,3,9,0.95)), url("/assets/background.png") center/cover no-repeat;
+}
+body.light-theme .trainers-hero {
+  background: linear-gradient(rgba(240,244,248,0.85), rgba(240,244,248,0.95)), url("/assets/background.png") center/cover no-repeat;
+}
+
+.store-hero {
+  background: linear-gradient(135deg, #020309 0%, #0d1a2d 60%, #080f1a 100%);
+}
+body.light-theme .store-hero {
+  background: linear-gradient(135deg, #f0f4f8 0%, #e1e7f0 100%);
+}
+
+.blogpost-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 

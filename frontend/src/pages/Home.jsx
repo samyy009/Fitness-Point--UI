@@ -198,8 +198,7 @@ export default function Home() {
   return (
     <div style={{ position: 'relative' }}>
       {/* ── Hero ─────────────────────────────────────────────────────── */}
-      <section className="hero" style={{ 
-        backgroundImage: `linear-gradient(rgba(2,3,9,0.7), rgba(2,3,9,0.85)), url('/assets/background.png')`,
+      <section className="hero home-hero" style={{ 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',

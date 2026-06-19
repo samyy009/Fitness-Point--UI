@@ -37,8 +37,7 @@ export default function About() {
   return (
     <div>
       {/* ── Hero ─────────────────────────────────────────────────────── */}
-      <div style={{
-        background: 'linear-gradient(rgba(2,3,9,0.7), rgba(2,3,9,0.92)), url("/assets/facility.jpg") center/cover no-repeat',
+      <div className="about-hero" style={{
         minHeight: '45vh',
         display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center',
         marginTop: '70px', position: 'relative', overflow: 'hidden'
