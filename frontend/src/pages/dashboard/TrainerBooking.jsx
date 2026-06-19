@@ -30,7 +30,7 @@ export default function TrainerBooking() {
     const loadData = async () => {
       try {
         const [trainersRes, bookingsRes] = await Promise.all([
-          api.get('/admin/trainers').catch(() => ({
+          api.get('/trainers').catch(() => ({
             data: [
               { id: 1, name: 'John Doe', specialty: 'Bodybuilding & Strength' },
               { id: 2, name: 'Jane Smith', specialty: 'Cardio & Nutrition' },

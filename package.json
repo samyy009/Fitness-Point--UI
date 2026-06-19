@@ -1,0 +1,21 @@
+{
+  "name": "fitness-point-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "npm install && npm install --prefix frontend && npm install --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run start --prefix backend",
+    "dev": "concurrently --kill-others \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "db:generate": "npx prisma generate --schema=./database/schema.prisma",
+    "db:migrate": "npx prisma migrate dev --schema=./database/schema.prisma",
+    "db:seed": "node database/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.22.0"
+  }
+}

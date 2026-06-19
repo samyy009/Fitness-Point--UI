@@ -24,7 +24,7 @@ export default function Trainers() {
   const [bookingError, setBookingError] = useState('');
 
   useEffect(() => {
-    api.get('/admin/trainers')
+    api.get('/trainers')
       .then(res => {
         setTrainers(res.data);
         setLoading(false);
@@ -55,7 +55,7 @@ export default function Trainers() {
     setBookingSuccess(false);
 
     // Verify authentication
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem('fp_token');
     if (!token) {
       navigate('/login');
       return;
