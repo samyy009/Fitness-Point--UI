@@ -205,7 +205,7 @@ export default function Store() {
     addToCart({ ...product, price: product.price }, option);
     toast.success(`${product.name} added to your bag!`, {
       icon: '🛒',
-      style: { background: 'var(--dark-3)', color: '#fff', border: '1px solid rgba(0,229,255,0.2)' }
+      style: { background: 'var(--dark-3)', color: 'var(--white)', border: '1px solid rgba(0,229,255,0.2)' }
     });
   };
 
@@ -214,7 +214,7 @@ export default function Store() {
     addToCart({ ...product, price: product.price }, option);
     toast.success(`${product.name} added to your bag!`, {
       icon: '🛒',
-      style: { background: 'var(--dark-3)', color: '#fff', border: '1px solid rgba(0,229,255,0.2)' }
+      style: { background: 'var(--dark-3)', color: 'var(--white)', border: '1px solid rgba(0,229,255,0.2)' }
     });
     setActiveQuickView(null);
   };
@@ -394,11 +394,11 @@ export default function Store() {
                           </span>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
                             <Star size={11} fill="#ffc107" color="#ffc107" />
-                            <span style={{ fontSize: '0.78rem', fontWeight: 700, color: '#fff' }}>{product.rating}</span>
+                            <span style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--white)' }}>{product.rating}</span>
                             <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>({product.reviews})</span>
                           </div>
                         </div>
-                        <h3 style={{ fontSize: '1rem', fontWeight: 800, color: '#fff', marginBottom: '0.85rem', lineHeight: 1.3 }}>
+                        <h3 style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--white)', marginBottom: '0.85rem', lineHeight: 1.3 }}>
                           {product.name}
                         </h3>
                       </div>
@@ -533,7 +533,7 @@ export default function Store() {
                 <div style={{ padding: '2.25rem', background: 'var(--dark-3)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                   <div>
                     {/* Title & Ratings */}
-                    <h2 style={{ fontSize: '1.35rem', fontWeight: 900, color: '#fff', letterSpacing: '-0.01em', marginBottom: '0.4rem' }}>
+                    <h2 style={{ fontSize: '1.35rem', fontWeight: 900, color: 'var(--white)', letterSpacing: '-0.01em', marginBottom: '0.4rem' }}>
                       {activeQuickView.name}
                     </h2>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', marginBottom: '1.25rem' }}>
@@ -542,7 +542,7 @@ export default function Store() {
                           <Star key={s} size={12} fill={s <= Math.floor(activeQuickView.rating) ? '#ffc107' : 'transparent'} color="#ffc107" />
                         ))}
                       </div>
-                      <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#fff' }}>{activeQuickView.rating}</span>
+                      <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--white)' }}>{activeQuickView.rating}</span>
                       <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>({activeQuickView.reviews} reviews)</span>
                     </div>
 

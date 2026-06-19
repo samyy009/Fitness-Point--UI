@@ -155,8 +155,12 @@ export default function Home() {
   const handleCalculateBmi = (e) => {
     e.preventDefault();
     if (!height || !weight) return;
-    const heightInMeters = parseFloat(height) / 100;
-    const weightInKg = parseFloat(weight);
+    const heightVal = parseFloat(height);
+    const weightVal = parseFloat(weight);
+    if (heightVal <= 0 || weightVal <= 0) return;
+
+    const heightInMeters = heightVal / 100;
+    const weightInKg = weightVal;
     const bmi = (weightInKg / (heightInMeters * heightInMeters)).toFixed(1);
     
     let category = '';
@@ -401,6 +405,7 @@ export default function Home() {
                     className="form-input" 
                     value={height}
                     onChange={(e) => setHeight(e.target.value)}
+                    min="1"
                     required
                   />
                 </div>
@@ -412,6 +417,7 @@ export default function Home() {
                     className="form-input" 
                     value={weight}
                     onChange={(e) => setWeight(e.target.value)}
+                    min="1"
                     required
                   />
                 </div>

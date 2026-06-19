@@ -43,6 +43,8 @@ import ManageMessages from './pages/admin/ManageMessages';
 import ManageBookings from './pages/admin/ManageBookings';
 import ManageGallery from './pages/admin/ManageGallery';
 
+import ScrollToTopButton from './components/ScrollToTopButton';
+
 export default function App() {
   return (
     <>
@@ -88,6 +90,7 @@ export default function App() {
         </Route>
       </Routes>
       <ChatbotWidget />
+      <ScrollToTopButton />
     </>
   );
 }

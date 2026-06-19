@@ -17,8 +17,12 @@ export default function BmiCalculator() {
     e.preventDefault();
     if (!height || !weight) return;
 
-    const heightM = parseFloat(height) / 100;
-    const weightKg = parseFloat(weight);
+    const heightVal = parseFloat(height);
+    const weightVal = parseFloat(weight);
+    if (heightVal <= 0 || weightVal <= 0) return;
+
+    const heightM = heightVal / 100;
+    const weightKg = weightVal;
     const bmiVal = parseFloat((weightKg / (heightM * heightM)).toFixed(1));
 
     let category = '';
@@ -86,7 +90,7 @@ export default function BmiCalculator() {
               placeholder="e.g. 175"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
-              min="100"
+              min="1"
               max="250"
               required
             />
@@ -100,7 +104,7 @@ export default function BmiCalculator() {
               placeholder="e.g. 72"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
-              min="30"
+              min="1"
               max="200"
               required
             />
