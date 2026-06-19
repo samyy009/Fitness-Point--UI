@@ -19,6 +19,7 @@ export default function Blog() {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState('All');
+  const categories = ['All', ...new Set(posts.map(p => p.category).filter(Boolean).map(cat => cat.charAt(0).toUpperCase() + cat.slice(1).toLowerCase()))];
 
   useEffect(() => {
     api.get('/blog')
@@ -62,10 +63,10 @@ export default function Blog() {
       {/* ── Category Filter ────────────────────────────────────────────── */}
       <div style={{ background: 'var(--dark-2)', borderBottom: '1px solid rgba(0,229,255,0.08)', position: 'sticky', top: '70px', zIndex: 50 }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', padding: '1rem 2rem', flexWrap: 'wrap' }}>
-          {CATEGORIES.map(cat => (
+          {categories.map(cat => (
             <motion.button key={cat} whileTap={{ scale: 0.95 }}
-              className={`btn btn-sm ${activeCategory === cat ? 'btn-primary' : 'btn-ghost'}`}
-              onClick={() => setActiveCategory(cat)}>
+               className={`btn btn-sm ${activeCategory === cat ? 'btn-primary' : 'btn-ghost'}`}
+               onClick={() => setActiveCategory(cat)}>
               {cat}
             </motion.button>
           ))}

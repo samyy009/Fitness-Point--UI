@@ -1133,12 +1133,18 @@ body.light-theme {
   --grad-hero: linear-gradient(135deg, #f0f4f8 0%, #e1e7f0 100%);
   --grad-dark: linear-gradient(180deg, #f0f4f8 0%, #e1e7f0 100%);
   --blog-overlay: linear-gradient(rgba(240, 244, 248, 0.65), rgba(240, 244, 248, 0.95));
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 48px rgba(0,0,0,0.12);
 }
+
+/* ── Light Theme Body ─────────────────────────────────────────────────────── */
+body.light-theme {
+  background: #f0f4f8;
+  color: #1a202c;
+}
+
+/* ── Light Theme Navbar ─────────────────────────────────────────────────────── */
 body.light-theme .navbar.scrolled {
-  background: rgba(240, 244, 248, 0.9);
-}
-body.light-theme .user-dropdown {
-  background: #ffffff;
   border-color: rgba(0, 229, 255, 0.2);
 }
 body.light-theme .nav-mobile {

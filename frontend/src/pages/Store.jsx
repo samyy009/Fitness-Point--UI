@@ -477,7 +477,7 @@ export default function Store() {
                 {badge.icon}
               </div>
               <div>
-                <h4 style={{ fontWeight: 800, fontSize: '0.9rem', color: '#fff', marginBottom: '0.25rem' }}>{badge.title}</h4>
+                <h4 style={{ fontWeight: 800, fontSize: '0.9rem', color: 'var(--white)', marginBottom: '0.25rem' }}>{badge.title}</h4>
                 <p style={{ fontSize: '0.79rem', color: 'var(--text-muted)', lineHeight: 1.55 }}>{badge.desc}</p>
               </div>
             </div>

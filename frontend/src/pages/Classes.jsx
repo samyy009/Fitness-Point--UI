@@ -29,7 +29,7 @@ export default function Classes() {
       .catch(() => { setError('Failed to load classes.'); setLoading(false); });
   }, []);
 
-  const categories = ['All', 'Strength', 'Cardio', 'HIIT', 'Yoga', 'Flexibility'];
+  const categories = ['All', ...new Set(classesList.map(c => c.category).filter(Boolean).map(cat => cat.charAt(0).toUpperCase() + cat.slice(1).toLowerCase()))];
   const filtered = filter === 'All' ? classesList : classesList.filter(c => c.category?.toLowerCase() === filter.toLowerCase());
 
   const features = [
