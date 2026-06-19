@@ -1170,27 +1170,27 @@ body.light-theme .user-dropdown a:hover, body.light-theme .user-dropdown button:
 
 /* ── Light Theme Navbar Contrast Overrides ────────────────────────────────── */
 body.light-theme .navbar:not(.scrolled) .nav-link {
-  color: rgba(255, 255, 255, 0.85) !important;
+  color: #2d3748 !important;
 }
 body.light-theme .navbar:not(.scrolled) .nav-link:hover {
   color: var(--primary) !important;
 }
 body.light-theme .navbar:not(.scrolled) .nav-logo {
-  color: #ffffff !important;
+  color: #1a202c !important;
 }
 body.light-theme .navbar:not(.scrolled) .nav-logo span {
   color: var(--primary) !important;
 }
 body.light-theme .navbar:not(.scrolled) .nav-actions button,
 body.light-theme .navbar:not(.scrolled) .nav-actions svg {
-  color: #ffffff !important;
+  color: #1a202c !important;
 }
 body.light-theme .navbar:not(.scrolled) .nav-cart-icon {
-  color: #ffffff !important;
+  color: #1a202c !important;
 }
 body.light-theme .navbar:not(.scrolled) .nav-mobile-btn {
-  color: #ffffff !important;
-  border-color: rgba(255, 255, 255, 0.15) !important;
+  color: #1a202c !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 body.light-theme .navbar.scrolled .nav-link {
@@ -1199,9 +1199,10 @@ body.light-theme .navbar.scrolled .nav-link {
 body.light-theme .navbar.scrolled .nav-link:hover {
   color: var(--primary) !important;
 }
+body.light-theme .navbar:not(.scrolled) .nav-link.active,
 body.light-theme .navbar.scrolled .nav-link.active {
-  color: var(--primary) !important;
-  background: rgba(0, 229, 255, 0.1) !important;
+  color: #00b8d4 !important;
+  background: rgba(0, 229, 255, 0.12) !important;
 }
 body.light-theme .navbar.scrolled .nav-logo {
   color: #1a202c !important;
